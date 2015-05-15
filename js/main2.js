@@ -14,9 +14,15 @@ $(document).ready(function() {
     float: 'left',
     'z-index': 5
   });
+  var $container = $('<div class="contianer"></div>')
+  $container.css({
+    'max-width': '600px';
+    margin: '0 auto';
+  }})
 
   //sets up the board with 9 squares, and sets the 4 cardinal boxes as darker
   var setupBoard = function () {
+    $('body').append($container);
     for (var i = 0 ; i < inputMat.length ; i++ ) {
       $('.container').append($box.clone());
       $('.box').last().addClass(' ' + i);
