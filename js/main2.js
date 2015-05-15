@@ -12,7 +12,8 @@ $(document).ready(function() {
     fontSize: '150px',
     textAlign: 'center',
     float: 'left',
-    'z-index': 5
+    'z-index': 5,
+    color: 'white'
   });
   var $container = $('<div class="container"></div>')
   $container.css({
@@ -32,7 +33,7 @@ $(document).ready(function() {
 
   //does fun animation on click
   var animateImage = function () {
-    currentTween = TweenMax.to( ".box", 0.2, {
+    currentTween = TweenMax.to( ".box", 0.02, {
       'background-color': 'white',
       repeat: 1,
       yoyo: true,
@@ -120,7 +121,8 @@ $(document).ready(function() {
       'background-color': 'rgba(0,0,0,.4)',
       position: 'absolute',
       'z-index': 6,
-      textAlign: 'center'
+      textAlign: 'center',
+      color: 'white'
     });
 
     //jQuery box constructor
