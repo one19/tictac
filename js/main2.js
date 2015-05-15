@@ -14,11 +14,11 @@ $(document).ready(function() {
     float: 'left',
     'z-index': 5
   });
-  var $container = $('<div class="contianer"></div>')
+  var $container = $('<div class="container"></div>')
   $container.css({
-    'max-width': '600px';
-    margin: '0 auto';
-  }})
+    'max-width': '600px',
+    margin: '0 auto'
+  });
 
   //sets up the board with 9 squares, and sets the 4 cardinal boxes as darker
   var setupBoard = function () {
@@ -33,8 +33,7 @@ $(document).ready(function() {
   //does fun animation on click
   var animateImage = function () {
     currentTween = TweenMax.to( ".box", 0.2, {
-      width: "170px",
-      height: "170px",
+      'background-color': 'white',
       repeat: 1,
       yoyo: true,
       ease: Bounce.easeOut
